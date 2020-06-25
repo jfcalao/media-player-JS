@@ -10,3 +10,8 @@ const muter= new MediaPlayer({el:video})
 
 playButton.onclick = () =>player.playPause() 
 muteButton.onclick = () => muter.muteToggle()
+
+if ('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js').catch(error=>console.log(error.message))
+
+}
