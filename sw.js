@@ -20,14 +20,14 @@ async function precache(){
   const cache= await caches.open(VERSION)
   console.log(cache);
   return cache.addAll([
-    '/',
+    /* '/',
     '/index.html',
     '/assets/index.js',
     '/assets/index.css',
     '/assets/MediaPlayer.js',
     '/assets/BigBuckBunny.mp4',
     '/assets/pluggins/AutoPlay.js',
-    '/assets/pluggins/AutoPause.js'
+    '/assets/pluggins/AutoPause.js' */
   ])
 }
 async function cacheResponse(request){
